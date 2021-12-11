@@ -1,0 +1,81 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+    padding: 0% 2% 0% 2%;
+    background-color: rgb(228, 228, 228);
+}
+.diven{
+    width: 100%;
+    height: 54vh;
+    margin-top: 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divan{
+    width: 90vh;
+    height: 47vh;
+    padding: 1vh 3vh 1vh 3vh;
+    background-color: white;
+}
+.ps{
+    margin-top: 3vh;
+    font-size: 4vh;
+    font-weight: 1000;
+}
+.exmpl{
+    font-size: 2.6vh;
+    font-weight: 1000;
+}
+.pr1{
+    color: rgb(14, 129, 66);
+    font-size: 2vh;
+}
+.pr1::after{
+    content: '>';
+}
+.pr1:hover::after{
+    transform: translateX(0);
+    transition: all 3s;
+    margin-left: 3vh;
+    color: black;
+}
+.pr3{
+    color: rgb(14, 129, 66);
+    font-size: 2vh;
+}
+.pr3::after{
+    content: '(https://www.scam.com)';
+}
+.pr3:hover::after{
+    transform: translateX(0);
+    transition: all 3s;
+    border-bottom: 0.1vh solid rgb(14, 129, 66);
+    color: black;
+}
+.pr2{
+    color: rgb(14, 129, 66);
+    font-size: 2vh;
+}
+.pr2::after{
+    content: "./hex/haxagon.png";
+    background-color: black;
+}
+.pr2:hover::after{
+    transform: rotateX(-60);
+    transition: all 3s;
+    color: black;
+}
+.link{
+    font-size: 1.8vh;
+    font-weight: bold;
+}
+.a1{
+    color: rgb(14, 129, 66);
+}
+.a1:visited{
+    color: rgb(17, 44, 167);
+}
+.a2:link{
+    color: rgb(17, 44, 167);
+}
