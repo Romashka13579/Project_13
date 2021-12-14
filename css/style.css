@@ -33,11 +33,11 @@ body{
 }
 .pr1::after{
     content: '>';
+     position: absolute;
 }
 .pr1:hover::after{
-    transform: translateX(0);
-    transition: all 3s;
-    margin-left: 3vh;
+    transform: translateX(1vh);
+    transition-duration: 3s;
     color: black;
 }
 .pr3{
@@ -48,34 +48,107 @@ body{
     content: '(https://www.scam.com)';
 }
 .pr3:hover::after{
-    transform: translateX(0);
-    transition: all 3s;
+    transform: translateX(2vh);
+    transition: 3s;
     border-bottom: 0.1vh solid rgb(14, 129, 66);
     color: black;
 }
 .pr2{
+    display: inline;
     color: rgb(14, 129, 66);
     font-size: 2vh;
+    position: relative;
+}
+.pr2::before{
+    content: '';
+    background:  url('../hex/square-regular.svg') center center no-repeat;
+    color: rgb(14, 129, 66);
+    width: 2.6vh;
+    height: 2.6vh;
+    position: absolute;
+    top: 0.1vh;
+    bottom: 0vh;
+    left: 22.7rem;
+    margin: 0vh;
 }
 .pr2::after{
-    content: "./hex/haxagon.png";
-    background-color: black;
+    content: '';
+    background:  url('../hex/long-arrow-alt-right-solid.svg') center center no-repeat;
+    color: rgb(14, 129, 66);
+    width: 2vh;
+    height: 2vh;
+    position: absolute;
+    top: 0.2vh;
+    bottom: 0vh;
+    margin: 0vh;
 }
-.pr2:hover::after{
-    transform: rotateX(-60);
+.pr2:hover::before{
+    transform: rotate(45deg);
     transition: all 3s;
     color: black;
 }
-.link{
+.pr2:hover::after{
+    transform: rotate(45deg);
+    transition: all 3s;
+    color: black;
+}
+
+
+
+.bl1{
+    margin-top: 1vh;
+}
+.linker{
     font-size: 1.8vh;
     font-weight: bold;
 }
-.a1{
+.av:visited{
     color: rgb(14, 129, 66);
+    text-decoration: none;
 }
-.a1:visited{
+.av:link{
     color: rgb(17, 44, 167);
+    text-decoration: none;
 }
-.a2:link{
+.al:visited{
+    color: rgb(14, 129, 66);
+    text-decoration: none;
+}
+.al:link{
     color: rgb(17, 44, 167);
+    text-decoration: none;
+}
+
+
+.bl2{
+    margin-top: 1vh;
+}
+.linker2{
+    font-size: 1.8vh;
+    font-weight: bold;
+}
+.ah{
+    color: rgb(14, 129, 66);
+    text-decoration: none;
+}
+.ah:hover{
+    font-size: 2vh;
+    color: rgb(14, 129, 66);
+    text-decoration: none;
+}
+.aa{
+    color: rgb(14, 129, 66);
+    text-decoration: none;
+}
+.aa:active{
+    color: rgb(17, 44, 167);
+    text-decoration: none;
+}
+.af{
+    color: rgb(14, 129, 66);
+    text-decoration: none;
+}
+.af:focus{
+    color: rgba(184, 184, 184, 0.979);
+    text-decoration: none;
 }
